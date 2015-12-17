@@ -174,27 +174,27 @@ endif
 function! AppendPyHeader()
     call append(0, '#!/usr/bin/env python')
     call append(1, '#-*- coding:utf-8 -*-')
-    call append(2, '# Author: Kun Huang <academicgareth@gmail.com>')
+    call append(2, '# Author: Eli Qiao <qiaoliyong@gmail.com>')
 endfunction
 autocmd BufNewFile *.py call AppendPyHeader()
 
 function! AppendCSSHeader()
     call append(0, '/*')
-    call append(1, 'Author: Kun Huang <academicgareth@gmail.com>')
+    call append(1, 'Author: Eli Qiao <qiaoliyong@gmail.com>')
     call append(2, '*/')
 endfunction
 autocmd BufNewFile *.css call AppendCSSHeader()
 
 function! AppendJsHeader()
     call append(0, '/*')
-    call append(1, 'Author: Kun Huang <academicgareth@gmail.com>')
+    call append(1, 'Author: Eli Qiao <qiaoliyong@gmail.com>')
     call append(2, '*/')
 endfunction
 autocmd BufNewFile *.js call AppendJsHeader()
 
 function! AppendShHeader()
     call append(0, '#!/bin/bash')
-    call append(1, '# Author: Kun Huang <academicgareth@gmail.com>')
+    call append(1, '# Author: Eli Qiao <qiaoliyong@gmail.com>')
 endfunction
 autocmd BufNewFile *.sh call AppendShHeader()
 
