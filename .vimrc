@@ -242,3 +242,18 @@ set foldexpr=PythonFoldUtils(v:lnum)
 set foldmethod=expr
 nnoremap <Space> za
 " TODO python files only
+"
+"
+set enc=utf8
+set fencs=utf8,gbk,gb2312,gb18030,cp936
+
+" Uncomment the following to have Vim jump to the last position when
+" " reopening a file
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
+
+" vim-go plugin
+call plug#begin()
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+call plug#end()
