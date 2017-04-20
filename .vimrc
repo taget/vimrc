@@ -257,3 +257,6 @@ endif
 call plug#begin()
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 call plug#end()
+
+" Yaml plugin
+au BufNewFile,BufRead *.yaml,*.yml so ~/.vim/yaml.vim
